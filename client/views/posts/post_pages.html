@@ -1,0 +1,11 @@
+<template name="postItemDes">
+  <div class="post detail">
+  	<h3 class="post-title"><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
+  	<div class="post-des"><span class="title">作者：<i>{{author}}</i></span><span class="title">发布日期：<i>{{submitted}}</i></span>{{#if currentUser}}<span class="title"><a href="{{pathFor 'postEdit'}}">编辑</a></span>{{/if}}</div>
+    <div class="post-content typo">
+      	{{#markdown}}{{content}}{{/markdown}}
+    </div>
+    <a href="#" class="showcomment">我要评论</a>
+    <div class="ds-thread" style="display:none" data-thread-key="{{_id}}" data-title="{{title}}" data-url="http://jakeauyeung.com{{pathFor 'postPage'}}"></div>
+  </div>
+</template>

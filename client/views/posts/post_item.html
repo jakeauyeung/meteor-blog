@@ -1,0 +1,10 @@
+<template name="postItem">
+  <div class="post detail">
+  	<h3 class="post-title"><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
+  	<div class="post-des"><span class="title">作者：<i>{{author}}</i></span><span class="title">发布日期：<i>{{submitted}}</i></span>{{#if currentUser}}<span class="title"><a href="{{pathFor 'postEdit'}}">编辑</a></span>{{/if}}</div>
+    <div class="post-content typo">
+      	{{#markdown}}{{content}}{{/markdown}}
+    </div>
+    <div class="more"><a href="{{pathFor 'postPage'}}" class="read-more">继续阅读>></a></div>
+  </div>
+</template>

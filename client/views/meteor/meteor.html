@@ -1,0 +1,9 @@
+<template name="meteor">
+	<div class="meteor">
+		{{#if currentUser}}<a href="{{pathFor 'postSite'}}">add</a>{{/if}}
+		<h3>Meteorjs 学习资料收集</h3>
+		{{#each sites}}
+			{{> meteorItem}}
+   	{{/each}}
+	</div>
+</template>

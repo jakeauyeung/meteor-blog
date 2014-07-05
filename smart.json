@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "iron-router": {},
+    "spin": {},
+    "npm": {},
+    "subs-manager": {},
+    "paginated-subscription": {}
+  }
+}

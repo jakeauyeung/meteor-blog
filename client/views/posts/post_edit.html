@@ -1,0 +1,35 @@
+<template name="postEdit">
+  <form class="main">
+  <h4 class="editSubmit">编辑文章</h4>
+  <div class="submitContext">
+    <div class="control-group">
+        <label class="control-label" for="title">标题：</label>
+        <div class="controls">
+            <input name="title" type="text" value="{{title}}" class="title" placeholder="输入标题..."/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="content">内容：</label>
+        <div class="controls">
+            <textarea name="content" class="md">{{content}}</textarea>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <a class="btn btn-danger delete" href="#">Delete post</a>
+        </div>
+    </div>
+  </div>
+  </form>
+  <div class="markdown">
+      {{#markdown}}{{{markdown_data}}}{{/markdown}}
+  </div>
+</template>

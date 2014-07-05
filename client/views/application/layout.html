@@ -1,0 +1,38 @@
+<template name="layout">
+<div class="container-blog">
+  <header class="navbar">
+    <a href="#nogo" class="icon-open">展开/关闭</a>
+    <div class="header-img"><a href="{{pathFor 'postsList'}}"><img src="/img/header.jpg" alt="JAKEAUYEUNG"></a><h1>JAKEAUYEUNG</h1></div>
+    <div class="navbar-inner-blog">
+     <ul>
+       <li><a href="{{pathFor 'postsList'}}">Blog</a></li>
+       <li><a href="{{pathFor 'instagram'}}">Instagram</a></li>
+       <li><a href="{{pathFor 'aboutme'}}">About Me</a></li>
+       <li><a href="{{pathFor 'meteor'}}">Meteorjs</a></li>
+       <li><a href="https://github.com/jakeauyeung" target="_blank">Github</a></li>
+       <li>{{#if currentUser}}<a href="{{pathFor 'postSubmit'}}">Write</a>{{/if}}</li>
+       <li>{{>loginButtons}}</li>
+     </ul>
+    </div>
+  </header>
+  <div id="main" class="row-fluid">
+    {{> yield}}
+  </div>
+</div>
+<footer class="footer-copy">
+  ©<a href="http://jakeauyeung.com">JAKEAUYEUNG</a> Powered by:<a href="http://meteor.com" target="_blank">Meteor</a><a href="http://mongodb.org" target="_blank">Mongodb</a>
+</footer>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"jakeauyeung"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+</template>

@@ -1,0 +1,24 @@
+// 边框阴影
+.box-shadow(...){
+	box-shadow:@arguments; 
+	-moz-box-shadow:@arguments;
+	-webkit-box-shadow:@arguments;
+	-o-box-shadow:@arguments;
+}
+
+// 字数截断
+.text(){
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-binding: url("ellipsis.xml#ellipsis");
+}
+
+// 圆角边框
+.border-radius(...){
+	border-radius: @arguments;
+	-o-border-radius: @arguments;
+	-webkit-border-radius: @arguments;
+	-moz-border-radius: @arguments;
+}
