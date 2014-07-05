@@ -41,3 +41,5 @@ tar zxvf bundle.tgz
 PORT=3000 MONGO_URL=mongodb://localhost:27017/blog ROOT_URL=http://demo.com forever start bundle/main.js
 ```
 
+####kadira
+kadira是一个全方位网站监控服务，不过国内无法访问，但如果服务器是在外面的话，推荐使用，配置位置：server/startup.js
