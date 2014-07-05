@@ -2,11 +2,16 @@ Meteor.Blog
 ===============
 基于meteor开发的个人网站,包含博客系统
 
-![此处输入图片的描述][1]
+![pc][1]
   [1]: http://jakeauyeung.qiniudn.com/meteor-blog.png
-  [2]: http://jakeauyeung.com
+  
 
-  预览：[JAKEAUYEUNG][2]
+![moblie][2]
+  [2]: http://jakeauyeung.qiniudn.com/meteor-blog-moblie.png
+
+
+  预览：[JAKEAUYEUNG][3]
+  [3]: http://jakeauyeung.com
 
 ####博客
 
@@ -14,6 +19,7 @@ Meteor.Blog
  2. 支持markdown写文章，并且及时预览
  3. 支持多说评论功能 配置文件/client/application/layout.html
  4. 支持编辑，修改，删除文章
+ 5. PC，MOBLIE响应式
 
 
 ####其他
