@@ -32,7 +32,7 @@ Meteor.Blog
 ####启动服务
 
 ```
-npm install -g meteoritr
+npm install -g meteorite
 npm install -g forever
 git clone https://github.com/jakeauyeung/meteor-blog.git
 cd meteor-blog
